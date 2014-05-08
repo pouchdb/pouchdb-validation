@@ -1,6 +1,9 @@
 {
 	"name": "pouchdb-validation",
 	"main": "index.js",
+	"browser": {
+		"bluebird": "lie"
+	},
 	"scripts": {
 		"build-js": "mkdir -p ../../dist && browserify index.js -s Validation -o ../../dist/pouchdb-validation.js",
 		"build": "npm run build-js; cd ../../dist; uglifyjs pouchdb-validation.js -mc > pouchdb-validation.min.js"
