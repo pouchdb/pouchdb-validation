@@ -1,6 +1,6 @@
 {
 	"name": "pouchdb-validation",
-	"version": "1.0.2",
+	"version": "1.1.0",
 	"main": "index.js",
 	"description": "A PouchDB plug-in that allows you to re-use your CouchDB validate_doc_update functions on the client side.",
 	"repository": {
