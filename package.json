@@ -3,7 +3,10 @@
 	"version": "1.2.1",
 	"main": "index.js",
 	"description": "A PouchDB plug-in that allows you to re-use your CouchDB validate_doc_update functions on the client side.",
-	"repository": "pouchdb/pouchdb-validation",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/pouchdb/pouchdb-validation.git"
+	},
 	"homepage": "http://python-pouchdb.marten-de-vries.nl/plugins.html",
 	"keywords": [
 		"pouch",
@@ -26,12 +29,11 @@
 		"pouchdb-bulkdocs-wrapper": "^1.0.0"
 	},
 	"devDependencies": {
-		"browserify": "^4.1.8",
-		"uglify-js": "^2.4.13",
-		"es3ify": "^0.1.3"
+		"pouchdb-plugin-helper": "^2.0.0"
 	},
-	"scripts": {
-		"build-js": "mkdir -p dist && browserify index.js -g es3ify -s Validation -o dist/pouchdb-validation.js",
-		"build": "npm run build-js; cd dist; uglifyjs pouchdb-validation.js -mc > pouchdb-validation.min.js"
+ 	"scripts": {
+		"helper": "./node_modules/.bin/pouchdb-plugin-helper",
+		"test": "npm run helper -- test",
+		"build": "npm run helper -- build Validation"
 	}
 }
