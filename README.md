@@ -1,6 +1,8 @@
 pouchdb-validation
 ==================
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pouchdb/pouchdb-validation.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/pouchdb/pouchdb-validation.svg?branch=master)](https://travis-ci.org/pouchdb/pouchdb-validation)
 [![Dependency Status](https://david-dm.org/pouchdb/pouchdb-validation.svg)](https://david-dm.org/pouchdb/pouchdb-validation)
 [![devDependency Status](https://david-dm.org/pouchdb/pouchdb-validation/dev-status.svg)](https://david-dm.org/pouchdb/pouchdb-validation#info=devDependencies)
