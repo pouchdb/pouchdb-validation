@@ -23,7 +23,7 @@ var createBulkDocsWrapper = require("pouchdb-bulkdocs-wrapper");
 var PouchPluginError = require("pouchdb-plugin-error");
 
 var uuid = require("random-uuid-v4");
-var Promise = require("pouchdb-promise");
+var Promise = require("pouchdb-promise").default;
 
 function oldDoc(db, id) {
   return db.get(id, {revs: true}).catch(function () {
